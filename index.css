@@ -1,0 +1,189 @@
+/* Fuentes chidas */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6dd5fa 0%, #2980b9 100%);
+    color: #222;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+
+/* Contenedor general */
+
+header,
+main,
+footer {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* --- HEADER --- */
+
+header {
+    background: #34495e;
+    color: #ecf0f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Navegación */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    background-color: #e67e22;
+    color: white;
+    box-shadow: 0 4px 10px rgba(230, 126, 34, 0.7);
+}
+
+
+/* Dropdown */
+
+nav ul li ul {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2980b9;
+    padding: 10px 0;
+    border-radius: 10px;
+    display: none;
+    min-width: 180px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 20;
+    flex-direction: column;
+}
+
+nav ul li:hover ul {
+    display: flex;
+}
+
+nav ul li ul li a {
+    padding: 10px 25px;
+    font-weight: 500;
+    border-radius: 0;
+}
+
+nav ul li ul li a:hover {
+    background-color: #e67e22;
+    box-shadow: none;
+}
+
+
+/* --- MAIN CONTENT --- */
+
+main h2 {
+    color: #2980b9;
+    font-size: 2.4rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-left: 5px solid #e67e22;
+    padding-left: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+main p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #444;
+    text-align: justify;
+}
+
+main ul {
+    margin-left: 25px;
+    margin-bottom: 40px;
+}
+
+main ul li {
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #555;
+    position: relative;
+    padding-left: 18px;
+    cursor: default;
+}
+
+main ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #e67e22;
+    font-weight: 900;
+}
+
+
+/* --- FOOTER --- */
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+    color: #777;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+    main h2 {
+        font-size: 1.8rem;
+    }
+    header,
+    main,
+    footer {
+        padding: 25px 20px;
+    }
+}

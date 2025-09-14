@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Promoviendo Turismo en el Perú</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: #00665a;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            color: #2c2c5e;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            position: relative;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            background-color: #004d40;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: #00796b;
+        }
+        
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #004d40;
+            padding: 0;
+            border-radius: 8px;
+            min-width: 200px;
+            z-index: 1000;
+        }
+        
+        nav ul li:hover ul {
+            display: block;
+        }
+        
+        nav ul li ul li {
+            display: block;
+            margin: 0;
+        }
+        
+        nav ul li ul li a {
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #00665a;
+            border-radius: 0;
+        }
+        
+        nav ul li ul li a:hover {
+            background-color: #00796b;
+        }
+        
+        .vision-text {
+            background-color: #f0f8ff;
+            color: #003366;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px;
+        }
+        
+        .mision-text {
+            background-color: #fff0f5;
+            color: #800040;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 20px;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #eee;
+        }
+        
+        section {
+            margin: 20px;
+        }
+        
+        section h2 {
+            color: #004d40;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Promoviendo Turismo en el Perú</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Quiénes Somos</a></li>
+                <li><a href="#">Visión</a></li>
+                <li><a href="#">Misión</a></li>
+                <li>
+                    <a href="#">Turismo</a>
+                    <ul>
+                        <li><a href="#">Cusco y el Valle Sagrado</a></li>
+                        <li><a href="#">Lago Titicaca</a></li>
+                        <li><a href="#">Cañón del Colca</a></li>
+                        <li><a href="#">Parque Nacional Huascarán</a></li>
+                        <li><a href="#">Barranco y Miraflores</a></li>
+                        <li><a href="#">Oasis de Huacachina</a></li>
+                        <li><a href="#">Chan Chan</a></li>
+                        <li><a href="#">Amazonía Peruana</a></li>
+                        <li><a href="#">Nacional del Manu y Tambopata</a></li>
+                        <li><a href="#">Kuélap</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p class="vision-text">
+            Visualizamos un futuro en el que nuestra institución sea reconocida por su excelencia y compromiso. Aspiramos a ser líderes en innovación y calidad. Queremos formar personas íntegras, fomentar la inclusión, el desarrollo sostenible, la creatividad y la
+            mejora continua.
+        </p>
+        <p class="mision-text">
+            Nuestra misión es ofrecer un servicio de calidad, formar personas comprometidas con sus valores, promover la educación integral, impulsar el desarrollo sostenible, la innovación y ser un referente de transformación positiva para nuestra comunidad.
+        </p>
+
+        <section>
+            <h2>La Costa: Historia, Aventura y Sabor</h2>
+            <p>
+                La zona costera del Perú, bañada por el océano Pacífico, representa la entrada principal al país. Aquí se mezclan las raíces prehispánicas y coloniales con el dinamismo moderno de las ciudades.
+            </p>
+            <p>
+                <strong>Lima:</strong> Esta ciudad, conocida como la “Ciudad de los Reyes”, es el centro cultural y culinario del país. Su Centro Histórico, reconocido por la UNESCO como Patrimonio de la Humanidad, alberga sitios emblemáticos como la
+                Plaza Mayor y la Catedral de Lima. Para los amantes del buen comer, el barrio bohemio de Barranco destaca por su vida artística y sus restaurantes de alta calidad.
+            </p>
+            <p>
+                <strong>Ica y Nazca:</strong> Al sur de Lima, esta región árida ofrece vivencias únicas. La Reserva de Paracas sorprende con su rica vida silvestre y paisajes marinos. Las misteriosas Líneas de Nazca, con más de 1,500 años de antigüedad,
+                continúan asombrando al mundo. Además, el oasis de Huacachina brinda actividades como sandboard y paseos en buggy.
+            </p>
+            <p>
+                <strong>Trujillo y Chiclayo:</strong> Más al norte, estas ciudades permiten explorar las culturas Mochica y Chimú. En Trujillo, la Huaca de la Luna revela impresionantes murales, mientras que en Chiclayo, el Museo Tumbas Reales de Sipán
+                muestra uno de los descubrimientos arqueológicos más relevantes del siglo XX.
+            </p>
+        </section>
+
+        <section>
+            <h2>La Sierra: La Grandeza de los Andes</h2>
+            <p>
+                El corazón del Perú está dominado por la majestuosa Cordillera de los Andes, una región de paisajes extraordinarios, cultura ancestral y una fuerte conexión con el legado incaico.
+            </p>
+            <p>
+                <strong>Cusco y el Valle Sagrado:</strong> Cusco, antigua capital del Imperio Inca, mezcla armoniosamente lo incaico con lo colonial. El Valle Sagrado, con sus andenes y pueblos como Pisac y Ollantaytambo, es la antesala perfecta para
+                visitar la joya principal: Machu Picchu.
+            </p>
+            <p>
+                <strong>Machu Picchu:</strong> Esta ciudadela inca, considerada una de las Siete Maravillas del Mundo, se encuentra en la cima de una montaña. Es un símbolo del ingenio y la arquitectura de los incas, y su visita ofrece una experiencia
+                visual y espiritual inolvidable.
+            </p>
+            <p>
+                <strong>Arequipa:</strong> Llamada “La Ciudad Blanca” por sus construcciones hechas de sillar volcánico, Arequipa se encuentra rodeada de volcanes que la hacen única. Su Centro Histórico y el Monasterio de Santa Catalina destacan por su
+                belleza. Además, cerca se halla el Cañón del Colca, hogar del majestuoso cóndor andino.
+            </p>
+            <p>
+                <strong>Puno y el Lago Titicaca:</strong> En las orillas del lago navegable más alto del planeta está Puno. El Lago Titicaca, rodeado de mitos y leyendas, es también hogar de comunidades que aún viven en islas flotantes hechas de totora.
+                Las islas de Taquile y Amantaní son destinos ideales para experimentar las costumbres locales.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Derechos de autor: José Rodrigo Mantilla Medina</p>
+    </footer>
+</body>
+
+</html>
